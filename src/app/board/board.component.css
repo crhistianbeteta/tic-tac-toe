@@ -1,0 +1,36 @@
+
+#mainPanel{
+    text-align: center;
+}
+#grid-container {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-gap: 5px 5px;
+    justify-content: center;
+  }    
+  app-square {
+    height: 100px;
+    width: 100px;
+}
+#boardPanel{
+    text-align:center;
+    padding: 10px;
+}
+#buttonPanel{
+    text-align:center;
+    margin: 5px;
+}
+#buttonPanel  strong{
+    margin-left: 5px;
+}
+h1{
+    text-align: center;
+}
+
+button:focus{ 
+    
+
+    box-shadow: none !important;
+
+}

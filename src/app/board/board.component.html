@@ -1,0 +1,19 @@
+<div id="mainPanel">
+<h1>TIC-TAC-TOE</h1>
+
+<div id="buttonPanel">
+    <button nbButton outline status="success" (click)="newGame()">
+        <fa-icon [icon]="gameIcon"></fa-icon>
+        <strong>NEW GAME!</strong>
+    </button>
+</div>
+
+<div id="boardPanel">
+    <div id="grid-container">
+        <app-square *ngFor="let val of squares; let i = index" [value]="val" (click)="!winner?makeMove(i):''">
+        </app-square>
+    </div>
+</div>
+<h3 *ngIf="winner">{{winner=='TIE'?'TIE':'WINNER: '+winner}}</h3>
+<h4 *ngIf="!winner">{{'PLAYER WITH TURN: ' + playerWithTurn}}</h4>
+</div>

@@ -1,0 +1,24 @@
+<nb-layout>
+
+    <nb-layout-header fixed >
+        
+      <nb-toggle status="primary" (change) ="changeTheme()">
+        <nb-icon icon="{{isLightTheme?'moon':'sun'}}"></nb-icon>
+      </nb-toggle>
+    </nb-layout-header>
+
+ 
+
+  <nb-layout-column>
+
+
+      <app-board></app-board>
+      
+    
+  </nb-layout-column>
+
+  <nb-layout-footer fixed>
+  <!-- Insert footer here -->
+  </nb-layout-footer>
+
+</nb-layout>
